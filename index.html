@@ -1,49 +1,133 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>Charlas de la gorra</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3>HAT Talks:</h3>
+				<h1>Charlas de la gorra</h1>
+			</section>
+
+			<section>
+				<h3>¿Qué vamos a ver hoy?</h3>
+				<ul>
+					<p>Presentar una nueva
+						<del>iniciativa</del> movida del HAT.</p>
+					<p>Contarles cómo pueden participar.</p>
+					<p>Mostrarles uno de los tantos proyectos en los que pueden participar.</p>
+					<p class="fragment">Y vamos a tomar fernet.</p>
+				</ul>
+			</section>
+
+			<section>
+				<h3>¿De qué se trata esta movida?</h3>
+				<ul>
+					<p>El HAT está trabajando en cada vez más proyectos de I+D, prototipos, pruebas de concepto, pequeños ventures, etcetera,
+						y queremos darles la oportunidad de que si hay algo que les guste, puedan meter mano.</p>
+				</ul>
+			</section>
+
+			<section>
+				<section data-background-image="img/para.jpg">
+					<h3>Para para para</h3>
+					<p>¿Vos me estás diciendo... que además de laburar en mi proyecto querés que te ayude a vos en tus cosas?</p>
+				</section>
+				<section>
+					<p><b>Solo si tenés ganas.</b> Ganas de usar tecnologías facheras que en tu proyecto no se pueden usar. Ganas de aprender
+						y demostar experiencia en cosas nuevas. Ganas de participar en proyectos open source. Ganas de programar sin que nadie
+						te joda. Ganas de tomar fernet o birra también, vino no.
+					</p>
+				</section>
+				<section>
+					<p>Y lo mejor es que no te tenes que comprometer a nada. No hay daily meetings, no hay deadlines, si te aburre algo lo
+						podés dejar sin terminar.</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>¿En qué proyectos puedo participar?</h3>
+					<p>La más fácil es <b>chusmear por tu cuenta los repositiorios en <a href="https://github.com/search?q=topic%3Ahexacta-innovation-labs+org%3Ahexacta&type=Repositories">GitHub</a></b>.
+						También hay algunas cosas en <a href="https://tfs.hexacta.com/tfs/Rivendell/HAT/_backlogs/TaskBoard/Backlog/Amigos%20del%20HAT#_a=requirements">TFS</a>,
+						y un <a href="hx-hat.slack.com/">Slack</a> dando vueltas.</p>
+				</section>
+				<section>
+					<h3>Por ejemplo...</h3>
+				</section>
+				<section>
+					<p>Por ejemplo <a href="https://github.com/hexacta/showcase">Showcase</a>. El showcase es un sitio web que muestra los
+						<i>experimentos</i> del HAT.</p>
+					<p>Está hecho con React + Next.js y lo que tiene de piola es que los componentes de React se renderizan en el momento de
+						buildear la app. Y después anda a las chapas y funca hasta en browsers con JS deshabilitado.</p>
+				</section>
+				<section>
+					<p>Por ejemplo <a href="https://github.com/hexacta/planning-deck">Planning Deck</a>. Planning Deck es una progressive web app que sirve de reemplazo para un mazo de cartas de planning poker.</p>
+					<p>Está hecho con Polymer con un par de optimizaciones para que las animaciones no se laggeen.</p>
+					<aside class="notes">También usa service workers, y ahora no me acuerdo, pero la idea es que funcione offline.</aside>
+				</section>
+				<section>
+					<p>Por ejemplo <a href="https://github.com/hexacta/sanata">Sanata</a>. Sanata es una web app para auto-generar tweets parecidos
+						a los de algún usuario.</p>
+					<p>Usa: React, React Motion, Markov Chains, Twitter API, Node, MongoDB, Docker, Kubernetes, Travis, GCloud...</p>
+					<p>La idea es ver un poco más de esta app luego.</p>
+					<aside class="notes">El front end esta hecho con React, algunas animaciones con React Motion. En el back end usa node y mongodb. Hay un par
+						de modulos de npm que hicimos para la parte de generación automática de texto. Y está configurado para que todos los
+						merges a master buildeen tres containers de dockers (front, back y db) y los deploye a google cloud usando travis.</aside>
+				</section>
+				<section>
+					<p>Y más... </p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Ah! No nos olvidemos del blog</h3>
+					<p>Hace poco lo pasamos a <a href="https://engineering.hexacta.com/">Medium</a>, que está re piola.</p>
+				</section>
+			</section>
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>

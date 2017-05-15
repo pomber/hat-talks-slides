@@ -1,9 +1,8 @@
 {
-  "name": "reveal.js",
+  "name": "hat-talks-slides",
   "version": "3.5.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
+  "description": "Slides for HAT Talks",
+  "homepage": "https://showcase.hexacta.com",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
@@ -11,13 +10,11 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Hakim El Hattab"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/pomber/hat-talks-slides.git"
   },
   "engines": {
     "node": ">=4.0.0"
